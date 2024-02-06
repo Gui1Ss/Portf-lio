@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #434343;
+}
+
+header {
+  position: inherit;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 40px 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+header .navbar {
+  display: flex;
+}
+header .navbar a {
+  color: #fff;
+  margin: 0 25px;
+  padding: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.7s;
+}
+header .navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #e9e1e1;
+  margin: 200px;
+}
+.container .imagem {
+  width: 300px;
+  height: 340px;
+  border-radius: 20px;
+}
+.container .container-textos .titulo {
+  color: cornflowerblue;
+  font-size: 46px;
+  font-weight: 600;
+}
+.container .container-textos .texto {
+  font-size: 33px;
+  font-weight: 600;
+}
+.container .container-textos .btns {
+  padding: 20px 10px;
+  gap: 30px;
+}
+.container .container-textos .btns .btn-download {
+  background-color: cornflowerblue;
+  color: #fff;
+  border: 0;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.7s;
+}
+.container .container-textos .btns .btn-download:hover {
+  box-shadow: #a6bbcc 0px 10px 10px, #a6bbcc 0px -12px 30px, #a6bbcc 0px 4px 6px, #a6bbcc 0px 12px 13px, #a6bbcc 0px -3px 5px;
+}
+.container .container-textos .btns .btn-contatos {
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.container .container-textos .btns .btn-contatos .plataformas {
+  width: 200px;
+  background-color: #a6bbcc;
+  border-radius: 20px;
+  margin-top: 30px;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in;
+  display: none;
+  opacity: 0;
+}
+.container .container-textos .btns .btn-contatos .plataformas.ativo {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  opacity: 1;
+}
+.container .container-textos .btns .btn-contatos:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 20px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sobre {
+  padding: 40px 13%;
+}
+.sobre .titulo-sobre {
+  color: cornflowerblue;
+  font-weight: 600;
+  font-size: 36px;
+  gap: 10px;
+}
+.sobre .texto-sobre {
+  padding: 35px 0 0 0;
+  font-size: 20px;
+  color: #fff;
+}
+.sobre .tecnologias {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  color: #b9b9b9;
+  font-weight: 600;
+}
+.certificado{
+  padding-top: 40px;
+}
+.btn-certificado{
+  background-color: cornflowerblue;
+  color: #fff;
+  border: 0;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all .7s;
+}
+.btn-certificado:hover{
+  box-shadow: #a6bbcc 0px 10px 10px,#a6bbcc 0px -12px 30px,#a6bbcc 0px 4px 6px, #a6bbcc 0px 12px 13px, #a6bbcc 0px -3px 5px;
+}
+
+@media (max-width: 1024px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 541px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
